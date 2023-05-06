@@ -82,6 +82,19 @@ nav {
   align-items: center;
 }
 
+#dark-mode-toggle{
+  outline: none;
+  margin-right:30px;
+  border: none;
+  background: none;
+
+}
+
+
+#dark-mode-toggle i{
+  color:goldenrod;
+}
+
 /* Set the styles for the user icon */
 .user-icon {
   width: 30px;
@@ -132,7 +145,7 @@ nav img {
   height: 100%;
   background-color: #fff;
   padding: 20px;
-  position: fixed;
+  position:fixed;
   /* top:0; */
   margin-top: 1px;
   /* border:2px solid red; */
@@ -222,7 +235,7 @@ nav img {
   padding-right:2%;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-left: 10px;
+  margin-left: 20px;
 
 }
 
@@ -312,8 +325,9 @@ border-radius: 5px;
   }
   
   .container, .large-container{
-    padding-left: 5%;
+    padding-left: 0%;
     padding-right: 5%;
+    /* background-color: black; */
   }
 
   .nav-right img{
@@ -481,6 +495,7 @@ h3 {
   justify-content: space-between;
   margin-top: 20px;
   font-size: 14px;
+  
 }
 
 .play-video-info p {
@@ -644,6 +659,7 @@ hr {
 @media (max-width:900px){
   .play-video{
     flex-basis: 100%;
+    margin-left: -10px;
   }
 
   .right-sidebar{
@@ -664,4 +680,64 @@ hr {
     margin-top: 15px;
   }
 }
+
+
+
+/* Default styles for light mode */
+body {
+  background-color: #fff;
+  color: black;
+}
+
+nav {
+  background-color: #f0f0f0;
+}
+
+.complete {
+  background-color: #fff;
+  color: #000;
+}
+
+.sidebar {
+  background-color: #f0f0f0;
+}
+
+.container {
+  background-color: #fff;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #111;
+  color: #fff;
+}
+
+nav.dark-mode {
+  background-color: #111;
+}
+
+.complete.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.complete.dark-mode .sidebar {
+  background-color: #111;
+}
+
+.complete.dark-mode .container {
+  background-color: #111;
+  color: #fff;
+}
+
+.complete.dark-mode .container p,
+.complete.dark-mode .container a {
+  color: #fff;
+}
+
+.complete.dark-mode .sidebar a,
+.complete.dark-mode .sidebar p {
+  color: #fff;
+}
+
 

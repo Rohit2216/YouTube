@@ -8,11 +8,19 @@ menuIcon.onclick=function(){
 
 }
 
-// Add event listener to toggle button
-// Add event listener to toggle button
-document.querySelector("#dark-mode-checkbox").addEventListener("change", function() {
-    document.body.classList.toggle("dark-mode");
-  });
-  
+// Get the dark mode toggle button element
+var darkModeToggle = document.getElementById('dark-mode-toggle');
+
+// Add a click event listener to the toggle button
+darkModeToggle.addEventListener('click', function() {
+  // Toggle the 'dark-mode' class on the 'body' element
+  document.body.classList.toggle('dark-mode');
+  // Toggle the 'dark-mode' class on the 'nav' element
+  document.querySelector('nav').classList.toggle('dark-mode');
+  // Toggle the 'dark-mode' class on the 'complete' element
+  document.querySelector('.complete').classList.toggle('dark-mode');
+});
+
+
 
   
