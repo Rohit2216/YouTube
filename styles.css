@@ -17,6 +17,7 @@ img {
 .flex-div {
   display: flex;
   align-items: center;
+  
 
 }
 
@@ -28,6 +29,7 @@ nav {
   position:sticky;
   top: 0;
   z-index: 10;
+  
 
 }
 
@@ -479,9 +481,12 @@ border-radius: 5px;
   border-radius: 5px;
 }
 
-.tags a:hover {
+
+
+
+/* .tags a:hover {
   background-color: #666;
-}
+} */
 
 h3 {
   font-size: 28px;
@@ -684,13 +689,13 @@ hr {
 
 
 /* Default styles for light mode */
-body {
+/* body {
   background-color: #fff;
   color: black;
-}
+} */
 
 nav {
-  background-color: #f0f0f0;
+  background-color: white;
 }
 
 .complete {
@@ -699,7 +704,7 @@ nav {
 }
 
 .sidebar {
-  background-color: #f0f0f0;
+  background-color: white;
 }
 
 .container {
@@ -717,7 +722,7 @@ nav.dark-mode {
 }
 
 .complete.dark-mode {
-  background-color: #222;
+  background-color: #111;
   color: #fff;
 }
 
